@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2014.1 (64-bit)
+# SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+# IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+# Start of session at: Mon Nov 16 22:11:04 2015
+# Process ID: 8720
+# Log file: T:/Logica-Programavel/Logica-Programavel/projeto1/projeto1.runs/synth_1/SS_controller.vds
+# Journal file: T:/Logica-Programavel/Logica-Programavel/projeto1/projeto1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SS_controller.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# set_msg_config -id {Common-41} -limit 4294967295
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config -id {Labtools 27-147} -limit 4294967295
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_property target_language Verilog [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# read_vhdl -library xil_defaultlib T:/Logica-Programavel/Logica-Programavel/projeto1/projeto1.srcs/sources_1/new/seteSegmentos.vhd
+# read_xdc T:/Logica-Programavel/Logica-Programavel/projeto1/projeto1.srcs/constrs_1/imports/Projetos/SevenSegmentos.xdc
+# set_property used_in_implementation false [get_files T:/Logica-Programavel/Logica-Programavel/projeto1/projeto1.srcs/constrs_1/imports/Projetos/SevenSegmentos.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir T:/Logica-Programavel/Logica-Programavel/projeto1/projeto1.cache/wt [current_project]
+# set_property parent.project_dir T:/Logica-Programavel/Logica-Programavel/projeto1 [current_project]
+# synth_design -top SS_controller -part xc7a100tcsg324-1
+Command: synth_design -top SS_controller -part xc7a100tcsg324-1
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 233.695 ; gain = 98.273
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-944] 0 definitions of operator "sll" match here [T:/Logica-Programavel/Logica-Programavel/projeto1/projeto1.srcs/sources_1/new/seteSegmentos.vhd:43]
+INFO: [Synth 8-2810] unit rtl ignored due to previous errors [T:/Logica-Programavel/Logica-Programavel/projeto1/projeto1.srcs/sources_1/new/seteSegmentos.vhd:20]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 265.602 ; gain = 130.180
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    invoked from within
+"if {$rt::useElabCache == false} {
+      rt::run_rtlelab -module $rt::top
+    }"
+    ("uplevel" body line 35)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+
+    while executing
+"source -notrace {./.Xil/Vivado-8720-J309-B7/realtime\SS_controller.tcl}"
+    invoked from within
+"synth_design -top SS_controller -part xc7a100tcsg324-1"
+    (file "SS_controller.tcl" line 22)
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 16 22:11:08 2015...

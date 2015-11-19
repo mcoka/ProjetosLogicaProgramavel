@@ -1,0 +1,360 @@
+
+*** Running vivado
+    with args -log piscacontrolaled.vds -m64 -mode batch -messageDb vivado.pb -source piscacontrolaled.tcl
+
+
+****** Vivado v2014.1 (64-bit)
+  **** SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+  **** IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source piscacontrolaled.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# set_msg_config -id {Common-41} -limit 4294967295
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config -id {Labtools 27-147} -limit 4294967295
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_property target_language Verilog [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# read_vhdl -library xil_defaultlib {
+#   T:/Logica-Programavel/Logica-Programavel/aula-20151109/aula-20151109.srcs/sources_1/new/piscacontrolaled.vhd
+#   T:/Logica-Programavel/Logica-Programavel/aula-20151109/aula-20151109.srcs/sources_1/new/mux.vhd
+#   T:/Logica-Programavel/Logica-Programavel/aula-20151109/aula-20151109.srcs/sources_1/new/aula20151109.vhd
+#   T:/Logica-Programavel/Logica-Programavel/aula-20151109/aula-20151109.srcs/sources_1/new/piscaled.vhd
+# }
+# read_xdc T:/Logica-Programavel/Logica-Programavel/aula-20151109/aula-20151109.srcs/constrs_1/imports/Problemas/io_basico.xdc
+# set_property used_in_implementation false [get_files T:/Logica-Programavel/Logica-Programavel/aula-20151109/aula-20151109.srcs/constrs_1/imports/Problemas/io_basico.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir T:/Logica-Programavel/Logica-Programavel/aula-20151109/aula-20151109.cache/wt [current_project]
+# set_property parent.project_dir T:/Logica-Programavel/Logica-Programavel/aula-20151109 [current_project]
+# synth_design -top piscacontrolaled -part xc7a100tcsg324-1
+Command: synth_design -top piscacontrolaled -part xc7a100tcsg324-1
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 234.383 ; gain = 98.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'piscacontrolaled' [T:/Logica-Programavel/Logica-Programavel/aula-20151109/aula-20151109.srcs/sources_1/new/piscacontrolaled.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'piscacontrolaled' (1#1) [T:/Logica-Programavel/Logica-Programavel/aula-20151109/aula-20151109.srcs/sources_1/new/piscacontrolaled.vhd:45]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[15]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[14]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[13]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[12]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[11]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[10]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[9]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[8]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[7]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[6]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[5]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[4]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[3]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[2]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[1]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port btnCpuReset
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[15]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[14]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[13]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[12]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[11]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[10]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[9]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[8]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[7]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[6]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[5]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[4]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[3]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[2]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 268.164 ; gain = 132.180
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.1/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/ConfigModes.xml
+
+Processing XDC Constraints
+Parsing XDC File [T:/Logica-Programavel/Logica-Programavel/aula-20151109/aula-20151109.srcs/constrs_1/imports/Problemas/io_basico.xdc]
+Finished Parsing XDC File [T:/Logica-Programavel/Logica-Programavel/aula-20151109/aula-20151109.srcs/constrs_1/imports/Problemas/io_basico.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 473.227 ; gain = 337.242
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 473.227 ; gain = 337.242
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 473.227 ; gain = 337.242
+---------------------------------------------------------------------------------
+
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module piscacontrolaled 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[15]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[14]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[13]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[12]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[11]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[10]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[9]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[8]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[7]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[6]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[5]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[4]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[3]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[2]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port led[1]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port btnCpuReset
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[15]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[14]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[13]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[12]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[11]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[10]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[9]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[8]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[7]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[6]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[5]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[4]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[3]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[2]
+WARNING: [Synth 8-3331] design piscacontrolaled has unconnected port sw[1]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 544.184 ; gain = 408.199
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 563.809 ; gain = 427.824
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 563.809 ; gain = 427.824
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 563.809 ; gain = 427.824
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 564.008 ; gain = 428.023
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 564.008 ; gain = 428.023
+---------------------------------------------------------------------------------
+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 564.008 ; gain = 428.023
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 564.008 ; gain = 428.023
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    10|
+|3     |LUT1   |    27|
+|4     |LUT2   |    28|
+|5     |LUT3   |     4|
+|6     |LUT4   |     5|
+|7     |FDRE   |    28|
+|8     |IBUF   |     2|
+|9     |OBUF   |     1|
+|10    |OBUFT  |    15|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   121|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 564.008 ; gain = 428.023
+---------------------------------------------------------------------------------
+
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 564.008 ; gain = 428.023
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+11 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 564.008 ; gain = 383.059
+# write_checkpoint piscacontrolaled.dcp
+# report_utilization -file piscacontrolaled_utilization_synth.rpt -pb piscacontrolaled_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 564.008 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 16 20:25:12 2015...
