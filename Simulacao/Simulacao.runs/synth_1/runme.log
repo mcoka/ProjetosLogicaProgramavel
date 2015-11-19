@@ -1,0 +1,412 @@
+
+*** Running vivado
+    with args -log tb_debounce.vds -m64 -mode batch -messageDb vivado.pb -source tb_debounce.tcl
+
+
+****** Vivado v2014.1 (64-bit)
+  **** SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+  **** IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source tb_debounce.tcl
+# set_param gui.test TreeTableDev
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_property target_language Verilog [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# read_vhdl -library xil_defaultlib {{T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/sources_1/imports/8-9 problemas/debounce_tb.vhd}}
+# read_xdc T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc
+# set_property used_in_implementation false [get_files T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.cache/wt [current_project]
+# set_property parent.project_dir T:/Logica-Programavel/Logica-Programavel/Simulacao [current_project]
+# synth_design -top tb_debounce -part xc7a100tcsg324-1
+Command: synth_design -top tb_debounce -part xc7a100tcsg324-1
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 234.516 ; gain = 99.441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tb_debounce' [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/sources_1/imports/8-9 problemas/debounce_tb.vhd:18]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/sources_1/imports/8-9 problemas/debounce_tb.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'tb_debounce' (1#1) [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/sources_1/imports/8-9 problemas/debounce_tb.vhd:18]
+WARNING: [Synth 8-3330] design tb_debounce has an empty top module
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 267.324 ; gain = 132.250
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.1/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/ConfigModes.xml
+
+Processing XDC Constraints
+Parsing XDC File [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:10]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for create_clock constraint with option '-objects [get_ports clk]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:10]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'btnCpuReset'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:191]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:191]
+WARNING: [Vivado 12-584] No ports matched 'btnCpuReset'. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:192]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc:192]
+Finished Parsing XDC File [T:/Logica-Programavel/Logica-Programavel/Simulacao/Simulacao.srcs/constrs_1/imports/Problemas/io_basico.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 468.375 ; gain = 333.301
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 468.375 ; gain = 333.301
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 468.375 ; gain = 333.301
+---------------------------------------------------------------------------------
+
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module tb_debounce 
+Detailed RTL Component Info : 
+
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3330] design tb_debounce has an empty top module
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 534.813 ; gain = 399.738
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 535.445 ; gain = 400.371
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 535.445 ; gain = 400.371
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 535.445 ; gain = 400.371
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 544.152 ; gain = 409.078
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 544.152 ; gain = 409.078
+---------------------------------------------------------------------------------
+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 544.152 ; gain = 409.078
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 544.152 ; gain = 409.078
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 544.152 ; gain = 409.078
+---------------------------------------------------------------------------------
+
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 544.152 ; gain = 409.078
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+9 Infos, 72 Warnings, 69 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 544.152 ; gain = 363.734
+# write_checkpoint tb_debounce.dcp
+# report_utilization -file tb_debounce_utilization_synth.rpt -pb tb_debounce_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 544.152 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 18 21:49:43 2015...

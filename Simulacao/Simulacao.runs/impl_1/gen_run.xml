@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1447890559">
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="PWROPT-DCP" Name="tb_debounce_pwropt.dcp"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="tb_debounce_drc_opted.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="tb_debounce_timing_summary_routed.pb"/>
+  <File Type="PA-TCL" Name="tb_debounce.tcl"/>
+  <File Type="OPT-DCP" Name="tb_debounce_opt.dcp"/>
+  <File Type="PWROPT-DRC" Name="tb_debounce_drc_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="tb_debounce_placed.dcp"/>
+  <File Type="PLACE-IO" Name="tb_debounce_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="tb_debounce_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="tb_debounce_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="tb_debounce_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="tb_debounce_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="tb_debounce_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="tb_debounce_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="tb_debounce_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="tb_debounce_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="tb_debounce_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="tb_debounce_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="tb_debounce_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="tb_debounce_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="tb_debounce_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="tb_debounce_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="tb_debounce_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="tb_debounce_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="tb_debounce_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="tb_debounce_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="tb_debounce_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="tb_debounce_timing_summary_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="tb_debounce.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="tb_debounce_timing_summary_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="tb_debounce.bit"/>
+  <File Type="BG-BIN" Name="tb_debounce.bin"/>
+  <File Type="BITSTR-MSK" Name="tb_debounce.msk"/>
+  <File Type="BITSTR-RBT" Name="tb_debounce.rbt"/>
+  <File Type="BITSTR-NKY" Name="tb_debounce.nky"/>
+  <File Type="BITSTR-BMM" Name="tb_debounce_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="tb_debounce.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="$PSDKDIR/SDK/SDK_Export/hw/tb_debounce.sysdef"/>
+  <File Type="BG-BGN" Name="tb_debounce.bgn"/>
+  <File Type="BG-DRC" Name="tb_debounce.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Problemas/io_basico.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Aulas/Problemas/io_basico.xdc"/>
+        <Attr Name="ImportTime" Val="1447108679"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
